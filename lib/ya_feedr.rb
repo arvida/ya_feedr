@@ -26,15 +26,12 @@ module YaFeedr
   end
 end
 
-if ENV['MONGOHQ_HOST']
-  puts "Running on MongoHQ"
-  MongoMapper.connection = Mongo::Connection.new(ENV['MONGOHQ_HOST'], ENV['MONGOHQ_PORT'])
-  MongoMapper.database = ENV['MONGOHQ_DATABASE']
-  MongoMapper.database.authenticate(ENV['MONGOHQ_USER'],ENV['MONGOHQ_PASSWORD'])
+if ENV['MONGOHQ_URL']
+  MongoMapper.config = {RAILS_ENV => {'uri' => ENV['MONGOHQ_URL']}}
 else
-  puts "Using local database"
-  MongoMapper.database = 'ya_feedr'
+  MongoMapper.config = {RAILS_ENV => {'uri' => 'mongodb://localhost/ya_feedr'}}
 end
+MongoMapper.connect(RAILS_ENV)
 
 require 'ya_feedr/config'
 require 'ya_feedr/helpers'
