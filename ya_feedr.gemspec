@@ -26,6 +26,6 @@ Gem::Specification.new do |s|
   s.add_dependency('time-lord')
   s.add_dependency('rake')
 
-  s.files        = Dir.glob("{test,lib}/**/*") + %w(README.rdoc ya_feedr.gemspec Rakefile Gemfile)
+  s.files        = Dir.glob("{test,lib}/**/*") + %w(README.textile ya_feedr.gemspec Gemfile)
   s.require_path = 'lib'
 end
