@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.add_dependency('mongo_mapper')
   s.add_dependency('nokogiri')
   s.add_dependency('time-lord')
+  s.add_dependency('rake')
 
   s.files        = Dir.glob("{test,lib}/**/*") + %w(README.rdoc ya_feedr.gemspec Rakefile Gemfile)
   s.require_path = 'lib'

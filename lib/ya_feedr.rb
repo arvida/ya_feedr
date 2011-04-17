@@ -5,6 +5,7 @@ require 'i18n'
 require 'net/http'
 require 'digest/sha1'
 require 'time-lord'
+require 'rake'
 
 module YaFeedr
   extend self
@@ -40,4 +41,6 @@ require 'ya_feedr/helpers'
 require 'ya_feedr/app'
 require 'ya_feedr/feed'
 require 'ya_feedr/feed_item.rb'
+require 'ya_feedr/tasks/update_feeds'
 Dir[File.dirname(__FILE__) + '/ya_feedr/feed_parsers/*.rb'].each {|file| require file }
+require File.join(YaFeedr::Config.app_root, 'ya_feedr')
