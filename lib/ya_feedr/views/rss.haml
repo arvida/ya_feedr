@@ -1,0 +1,13 @@
+!!! XML 
+%rss{ :version => "2.0" } 
+  %channel 
+    %title= YaFeedr.config.title 
+    %link= "http://#{request.host}" 
+    %description= YaFeedr.config.about 
+    %pubDate= Time.now 
+    - @feed_items.each do |item|
+      %item 
+        %title= "Post on #{item[:feed][:name]}"
+        %description= render_item item
+        %guid= item.id 
+        %pubDate= item.created_at 

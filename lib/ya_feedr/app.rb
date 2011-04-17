@@ -16,9 +16,16 @@ module YaFeedr
       haml :index
     end
 
+    get '/rss' do
+      @feed_items = YaFeedr::FeedItem.limit(10).sort(:created_at.desc).all
+      #response.headers['Cache-Control'] = 'public, max-age=18000'
+      content_type 'application/rss+xml'
+      haml(:rss, :format => :xhtml, :escape_html => true, :layout => false)
+    end
+
     get '/style.css' do
       content_type 'text/css'
-      response.headers['Cache-Control'] = 'public, max-age=30000'
+      response.headers['Cache-Control'] = 'public, max-age=18000'
       YaFeedr::App.static_file('style.css')
     end
 
@@ -28,6 +35,10 @@ module YaFeedr
 
     template :index do
       @index ||= template_file('index.haml')
+    end
+
+    template :rss do
+      @index ||= template_file('rss.haml')
     end
 
     class << self
