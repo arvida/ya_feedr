@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title= YaFeedr.config.title
+    %link{:rel=>'stylesheet', :href=>'/style.css', :type => "text/css"}       
+  %body
+    #wrap
+      %h1= YaFeedr.config.title
+      %p.about= YaFeedr.config.about
+      = yield
+

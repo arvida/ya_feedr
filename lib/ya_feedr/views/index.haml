@@ -1,0 +1,18 @@
+%ol#items
+  - @feed_items.each do |item|
+    %li{:class => item.css_class}
+      =render_item item
+      %p.meta
+        Posted 
+        %span.created_at=item.created_at.ago_in_words
+        on  
+        %a.feed_source{:href => item[:feed][:link]}
+          = item[:feed][:name]
+%span#pagination
+  - if @page > 1
+    %a{:href => "/?page=#{@page-1}", :title => 'Previous page'}="&larr;"
+  = @page
+  = "/"
+  = @pages
+  - if @pages > @page
+    %a{:href => "/?page=#{@page+1}", :title => 'Next page'}="&rarr;"
