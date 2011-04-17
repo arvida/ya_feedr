@@ -8,9 +8,10 @@
         on  
         %a.feed_source{:href => item[:feed][:link]}
           = item[:feed][:name]
-%span#pagination
-  - if @page > 1
-    %a{:href => "/?page=#{@page-1}", :title => 'Previous page'}="&larr;"
+- if @pages > 1
+  %span#pagination
+    - if @page > 1
+      %a{:href => "/?page=#{@page-1}", :title => 'Previous page'}="&larr;"
   = @page
   = "/"
   = @pages
