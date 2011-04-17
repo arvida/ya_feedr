@@ -1,6 +1,6 @@
 module YaFeedr
   class Config
-    attr_accessor :title, :about, :feeds
+    attr_accessor :title, :about, :feeds, :authentication
     # Path to gems lib/ya_feedr dir
     def root
       @root ||= File.expand_path( File.dirname(__FILE__) )

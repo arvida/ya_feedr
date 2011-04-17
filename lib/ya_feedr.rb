@@ -36,6 +36,7 @@ else
 end
 
 require 'ya_feedr/config'
+require 'ya_feedr/helpers'
 require 'ya_feedr/app'
 require 'ya_feedr/feed'
 require 'ya_feedr/feed_item.rb'

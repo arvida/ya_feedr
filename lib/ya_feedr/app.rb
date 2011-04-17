@@ -1,12 +1,8 @@
 module YaFeedr
   class App < Sinatra::Base
-    set :haml, :format => :html5
+    helpers YaFeedr::Helpers
 
-    helpers do
-      def render_item(feed_item)
-        haml YaFeedr::App.template_file(feed_item.parser.template), :locals => {:item => feed_item}, :layout => false
-      end
-    end
+    set :haml, :format => :html5
 
     get '/' do
       @per_page = 25
@@ -17,7 +13,9 @@ module YaFeedr
     end
 
     post '/update' do
+      protected!
       YaFeedr::Feed.fetch_and_save_new_items
+      [200, 'Feeds updated']
     end
 
     get '/rss' do
