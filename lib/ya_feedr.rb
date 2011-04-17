@@ -27,11 +27,11 @@ module YaFeedr
 end
 
 if ENV['MONGOHQ_URL']
-  MongoMapper.config = {RAILS_ENV => {'uri' => ENV['MONGOHQ_URL']}}
+  MongoMapper.config = {ENV['RACK_ENV'] => {'uri' => ENV['MONGOHQ_URL']}}
 else
-  MongoMapper.config = {RAILS_ENV => {'uri' => 'mongodb://localhost/ya_feedr'}}
+  MongoMapper.config = {ENV['RACK_ENV'] => {'uri' => 'mongodb://localhost/ya_feedr'}}
 end
-MongoMapper.connect(RAILS_ENV)
+MongoMapper.connect(ENV['RACK_ENV'])
 
 require 'ya_feedr/config'
 require 'ya_feedr/helpers'
