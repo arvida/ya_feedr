@@ -12,8 +12,8 @@
   %span#pagination
     - if @page > 1
       %a{:href => "/?page=#{@page-1}", :title => 'Previous page'}="&larr;"
-  = @page
-  = "/"
-  = @pages
-  - if @pages > @page
-    %a{:href => "/?page=#{@page+1}", :title => 'Next page'}="&rarr;"
+    = @page
+    = "/"
+    = @pages
+    - if @pages > @page
+      %a{:href => "/?page=#{@page+1}", :title => 'Next page'}="&rarr;"
