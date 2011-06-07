@@ -20,7 +20,6 @@ module YaFeedr
 
     get '/rss' do
       @feed_items = YaFeedr::FeedItem.limit(10).sort(:created_at.desc).all
-      response.headers['Cache-Control'] = 'public, max-age=18000'
       content_type 'application/rss+xml'
       haml(:rss, :format => :xhtml, :escape_html => true, :layout => false)
     end
