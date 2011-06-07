@@ -45,3 +45,7 @@ a {color: #1B676B;}
     #pagination a {
       color: #999;
       text-decoration: none: }
+  #built_with {
+    margin-top: 2em;
+    font-size: .875em;
+    text-align: center;}
