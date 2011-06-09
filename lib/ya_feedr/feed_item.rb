@@ -7,6 +7,8 @@ module YaFeedr
     key :feed, Hash
     key :checksum, String
 
+    ensure_index [[:created_at, -1]]
+
     before_validation :set_checksum
 
     validates_uniqueness_of :checksum
