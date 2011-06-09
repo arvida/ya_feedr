@@ -8,6 +8,6 @@
     - @feed_items.each do |item|
       %item 
         %title= "Post on #{item[:feed][:name]}"
-        %description= render_item item
+        %description= "<![CDATA[#{render_item item}]]>"
         %guid{:isPermaLink => 'false'}= item.id 
         %pubDate= item.created_at.rfc2822
