@@ -33,12 +33,17 @@ module YaFeedr
       url  = URI.parse(document_url)
       req  = Net::HTTP::Get.new(url.path)
       http = Net::HTTP.new(url.host, url.port)
-      result = http.start { |http| http.get("#{url.path}?#{url.query}", headers) }
-      result if result.code == "200"
+      begin
+        result = http.start { |http| http.get("#{url.path}?#{url.query}", headers) }
+        result if result.code == "200"
+      rescue
+        puts "Unable to fetch: #{document_url}"
+        false
+      end
     end
 
     def parsed_document
-      @parsed_document ||= Nokogiri::XML(@get_result.body)
+      Nokogiri::XML(@get_result.body)
     end
 
     def document_items
@@ -47,9 +52,10 @@ module YaFeedr
 
     class << self
       def fetch_and_save_new_items
-        YaFeedr.config.feeds.each do |feed_name, settings|
-          if YaFeedr.feed_parsers.has_key?(feed_name)
-            YaFeedr.feed_parsers[feed_name].new(settings).tap do |feed_parser|
+        YaFeedr.config.feeds.each do |_feed|
+          parser_name, settings = _feed.keys.first, _feed.values.first
+          if YaFeedr.feed_parsers.has_key?(parser_name)
+            YaFeedr.feed_parsers[parser_name].new(settings).tap do |feed_parser|
               feed_parser.fetch_items
               feed_parser.items.each &:save if feed_parser.items.any?
             end
