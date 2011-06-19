@@ -1,0 +1,112 @@
+HTTP/1.1 200 OK
+Date: Sun, 19 Jun 2011 11:10:15 GMT
+Server: Apache/2.2.19
+Last-Modified: Sat, 11 Jun 2011 16:02:05 GMT
+ETag: "586c2-4a571ceb99940"
+Accept-Ranges: bytes
+Content-Length: 362178
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>An RSS Blog - Daily News and Information Related to RSS Feeds, Syndication and Aggregation.</title>
+        <description>Daily RSS Blog and news related to RSS, really simple syndication, rdf, blogs, syndication and news aggregation. Information related to marketing RSS, new RSS software releases, beta test opportunities, new RSS directories and discussions of opportunities related to RSS.</description>
+        <link>http://www.rss-specifications.com/blog.htm</link>
+        <lastBuildDate>Sat, 11 Jun 2011 12:02:05 -0400</lastBuildDate>
+        <pubDate>Tue, 28 Nov 2006 09:00:00 -0500</pubDate>
+        <generator>FeedForAll v2.0 (2.0.1.0) http://www.feedforall.com</generator>
+        <image>
+            <url>http://www.rss-specifications.com/rss-spec-rss.gif</url>
+            <title>RSS Specifications</title>
+            <link>http://www.rss-specifications.com</link>
+            <description>RSS specifications, everything you need to know about rss.</description>
+            <width>88</width>
+            <height>31</height>
+        </image>
+        <item>
+            <title>Need Sound Effects for Podcasts?</title>
+            <description>You can find a variety of sound effects that can be added to podcasts at &lt;a href=&quot;http://www.digital-sound-effects.com&quot; target=&quot;_blank&quot; &gt;Digital Sound Effects&lt;/a&gt;.</description>
+            <link>http://www.rss-specifications.com/blog.htm#1402</link>
+            <guid isPermaLink="false">1402</guid>
+            <pubDate>Thu, 16 Jun 2011 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>RSSInclude</title>
+            <description>&lt;a href=&quot;http://www.rssinclude.com&quot; target=&quot;_blank&quot; &gt;RSSInclude&lt;/a&gt; - Convert RSS to HTML, RSS to PHP and RSS to Javascript. Embed Fresh RSS Feed Content on Your Website or Facebook Page. With the rssinclude.com RSS Reader Widget you can publish news feeds on your website, blog or facebook page quickly and easily!</description>
+            <link>http://www.rss-specifications.com/blog.htm#1401</link>
+            <guid isPermaLink="false">1401</guid>
+            <pubDate>Wed, 15 Jun 2011 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>FeedLooks</title>
+            <description>&lt;a href=&quot;http://www.feedlooks.com/&quot; target=&quot;_blank&quot; &gt;FeedLook&lt;/a&gt; check your Twitter feed and favorite blogs in an uncluttered email-like interface. </description>
+            <link>http://www.rss-specifications.com/blog.htm#1400</link>
+            <guid isPermaLink="false">1400</guid>
+            <pubDate>Tue, 14 Jun 2011 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>How Not to Lose RSS Subscribers</title>
+            <description>RSS has become a useful tool when it comes to getting your posts to your subscribers, but those people will quickly leave if you are not giving them what they ask for. You can use the three tips below to help you get those subscribers to remain subscribers.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://zhouzhenglawyer.com/2011/04/09/how-to-not-lose-rss-subscribers-when-blogging-2/&quot; target=&quot;_blank&quot; &gt;How Not to Lose RSS Suscribers&lt;/a&gt;</description>
+            <link>http://www.rss-specifications.com/blog.htm#1399</link>
+            <guid isPermaLink="false">1399</guid>
+            <pubDate>Mon, 13 Jun 2011 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>Technology Has Created Jobs</title>
+            <description>The technical search giant, Google, alone is the inspiration and sole cause behind the creation of thousands of new businesses. There are now companies dedicated solely to Pay-Per-Click campaign management. Thousands of individuals and companies now make money through search engine optimization and outsourcing their services to improve website rankings, specifically to see that a website ranks well in Googles organic search results. There are now software applications that can determine what keywords to use in optimizing a website for search engine rankings, and other software programs that assess and evaluate website traffic and popularity. These products and businesses were all brought to fruition as a result of Googles Internet search domination and technical stature.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.small-business-software.net/technology-has-spawned-industries.htm&quot; target=&quot;_blank&quot; &gt;Technology Has Spawned Industries&lt;/a&gt;</description>
+            <link>http://www.rss-specifications.com/blog.htm#1311</link>
+            <guid isPermaLink="false">1311</guid>
+            <pubDate>Wed, 6 Oct 2010 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>Hacking and Twitter</title>
+            <description>Generating a news frenzy usually reserved for Apple product launches, pranksters turned Twitter into wormville on Tuesday. The fast-spreading exploits proved two things: Twitter is undoubtedly now a mainstream service, and it has joined the ranks of big-time tech companies as a target for hackers.&lt;br /&gt;
+&lt;br /&gt;
+Security experts interviewed by CNET say the messaging service has done a fair job of protecting itself so far, but will have to be more careful with its coding if it wants to be trusted for news aggregation, integration on corporate sites, and as a useful international communication tool. &lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.zdnetasia.com/twitter-the-new-stage-for-hacker-hijinks_print-62203059.htm&quot; target=&quot;_blank&quot; &gt;complete article&lt;/a&gt;</description>
+            <link>http://www.rss-specifications.com/blog.htm#1310</link>
+            <guid isPermaLink="false">1310</guid>
+            <pubDate>Tue, 5 Oct 2010 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>Social Revolution</title>
+            <description>The collapse of Bloglines has ignited discussions about whether RSS readers have a future in the online news world. It is important to note that RSS technology is not going anywhere, as it still makes up the backbone of web development today. However, are consumers willing to use RSS readers to sift through huge amounts of information when Facebook and Twitter provide a more accessible and more social news experience?&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.siliconrepublic.com/new-media/item/17837-the-social-revolution-in-ne&quot; target=&quot;_blank&quot; &gt;Social Revolution&lt;/a&gt;</description>
+            <link>http://www.rss-specifications.com/blog.htm#1309</link>
+            <guid isPermaLink="false">1309</guid>
+            <pubDate>Mon, 4 Oct 2010 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>Create Ego Search Feeds for Reverse SEO</title>
+            <description>Ego searches are free and simple searches designed to monitor blogs and news portals for mentions of your company, product, competitors or other specific keywords. Conducting ego searches not only allows&amp;nbsp;&amp;nbsp;you to stay informed, but also allows you to maintain a strategic advantage over competing companies. A number of new Internet services are freely available that make these&lt;i&gt;&amp;nbsp;&amp;nbsp;ego searches &lt;/i&gt;painless and easy.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.feedforall.com/ego-searches.htm&quot; target=&quot;_blank&quot; &gt;Ego Search Feeds&lt;/a&gt;</description>
+            <link>http://www.rss-specifications.com/blog.htm#1308</link>
+            <guid isPermaLink="false">1308</guid>
+            <pubDate>Mon, 27 Sep 2010 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>Album Reminder</title>
+            <description>Never miss a new music album release! &lt;a href=&quot;http://www.albumreminder.com/&quot; target=&quot;_blank&quot; &gt;Album Reminder&lt;/a&gt; notifies you of new music releases of your favorite artists via email &amp; RSS.</description>
+            <link>http://www.rss-specifications.com/blog.htm#1307</link>
+            <guid isPermaLink="false">1307</guid>
+            <pubDate>Wed, 22 Sep 2010 09:00:00 -0400</pubDate>
+        </item>
+        <item>
+            <title>RSS to GeoConverter</title>
+            <description>RSS is a family of web feed formats, specified in XML and used for Web syndication. GeoRSS is a way to encode location in an RSS feed. &lt;br /&gt;
+&lt;br /&gt;
+The GeoNames &lt;a href=&quot;http://www.geonames.org/rss-to-georss-converter.html&quot; target=&quot;_blank&quot; &gt;RSS to GeoRSS Converter&lt;/a&gt; reads the entries of an RSS feed and searches the GeoNames Database to find a location for the entry text. If a relevant location is found, its latitude and longitude are added to the RSS feed using the GeoRSS encoding.</description>
+            <link>http://www.rss-specifications.com/blog.htm#1306</link>
+            <guid isPermaLink="false">1306</guid>
+            <pubDate>Tue, 21 Sep 2010 09:00:00 -0400</pubDate>
+        </item>
+    </channel>
+</rss>
