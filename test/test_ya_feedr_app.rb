@@ -13,7 +13,7 @@ class TestYaFeedr < MiniTest::Unit::TestCase
   def test_title_and_about_text
     get '/'
     assert last_response.body.include?('My mix of rss feeds'), 'should have have title'
-    assert last_response.body.include?('A bit of info'), 'should have have title'
+    assert last_response.body.include?('A bit of info'), 'should have have about text'
   end
 
   def test_render_feed_items
