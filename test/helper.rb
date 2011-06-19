@@ -1,4 +1,4 @@
-ENV['RACK_ENV'] = 'test'
+ENV[_'RACK_ENV'] = 'test'
 
 require 'minitest/autorun'
 require 'rack/test'
@@ -14,8 +14,8 @@ WebMock.disable_net_connect!
 YaFeedr.configure do |c|
   c.title = 'My mix of rss feeds'
   c.about = 'A bit of info'
-  c.feeds = [
-    { :twitter => {:username => 'twitter_user'}},
-    { :plain_rss => {:url => 'http://example.com/feed.rss'}}]
-    c.authentication = {:username => 'admin', :password => 'password'}
+  c.authentication = {:username => 'admin', :password => 'password'}
+  # Feeds
+  c.feeds.add :twitter, :username => 'twitter_user'
+  c.feeds.add :plain_rss, :url => 'http://example.com/feed.rss'
 end
