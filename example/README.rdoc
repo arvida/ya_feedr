@@ -2,9 +2,10 @@
 
 Your need a local mongodb server for this to work.
 
-1. Edit `ya_feedr.rb` and add your info
-2. run `bundle install`
-3. run `bundle exec rake cron`
-4. run `bundle exec rackup`
+First cd to this dir, edit ya_feedr.rb and add your info then run following commands to setup:
 
-Done. Now visit http://localhost:9292 in your browser of choice.
+    $ bundle install # install gems
+    $ bundle exec rake cron # fetches feed data
+    $ bundle exec rackup # start rack webserver
+
+Now visit http://localhost:9292 in your browser of choice.
