@@ -1,0 +1,10 @@
+== Example YaFeedr app
+
+Your need a local mongodb server for this to work.
+
+1. Edit `ya_feedr.rb` and add your info
+2. run `bundle install`
+3. run `bundle exec rake cron`
+4. run `bundle exec rackup`
+
+Done. Now visit http://localhost:9292 in your browser of choice.

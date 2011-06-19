@@ -1,0 +1,5 @@
+require 'rubygems'
+require 'bundler'
+Bundler.require
+
+task :cron => :ya_feedr_update_feeds
