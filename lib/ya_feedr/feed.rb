@@ -37,7 +37,8 @@ module YaFeedr
         result = http.start { |http| http.get("#{url.path}?#{url.query}", headers) }
         result if result.code == "200"
       rescue
-        puts "Unable to fetch: #{document_url}"
+        puts "* Unable to fetch: #{document_url}"
+        puts "  ---> #{$!.inspect}"
         false
       end
     end
